@@ -37,9 +37,13 @@ address {
   font-style: normal;
 }
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* width: 1158px; */
+  width: 320px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding-left: 16px;
+  padding-right: 16px;
+
   margin: 0 auto;
 }
 
@@ -201,6 +205,12 @@ address {
 
 /*               advantages                      */
 
+.advantages {
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding: 96px 0 96px 0;
+}
+
 .advantages-list-icon {
   display: flex;
   gap: 24px;
@@ -234,30 +244,33 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .advantages-title {
 }
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
 }
 .advantages-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  width: 100%;
 }
 .advantages-item-title {
-  font-weight: 500;
-  font-size: 20px;
+  text-align: center;
+  /* font-weight: 500; */
+  font-weight: 700;
+  /* font-size: 20px; */
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 .advantages-item-text {
-  max-width: 264px;
+  /* max-width: 264px; */
+  max-width: 288px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -268,9 +281,11 @@ address {
 /*               team                      */
 
 .team {
+  align-items: center;
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding: 96px 28px;
 }
 .team-title {
   margin-bottom: 72px;
@@ -282,21 +297,33 @@ address {
   text-align: center;
   color: #2e2f42;
 }
+.team-wrap {
+  padding-bottom: 32px;
+  background-color: #fff;
+  margin-bottom: 72px;
+}
+.team-wrap:last-of-type {
+  margin-bottom: 0;
+}
 .team-list {
-  gap: 24px;
+  /* gap: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
 .team-information {
+  width: 320px;
   padding: 32px 0;
 }
 .team-list-item {
+  width: calc((100% - 24px * 3) / 4);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-images {
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 .team-name-title {
   font-weight: 500;
@@ -361,8 +388,10 @@ address {
 /*               portfolio                      */
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .portfolio-title {
   margin-bottom: 72px;
@@ -381,8 +410,7 @@ address {
   row-gap: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
-  /* width: calc((100% - 60px * 2) / 3); */
+  /* width: calc((100% - 48px) / 3); */
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -452,26 +480,36 @@ address {
 /*               footer                      */
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  padding-top: 96px;
+  padding-bottom: 96px;
+
   background-color: #2e2f42;
 }
 .footer-span {
   color: #f4f4fd;
 }
 .footer-container {
-  margin-right: 120px;
+  text-align: center;
+  /* margin-right: 120px; */
 }
 .container-wrap {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* width: 1158px; */
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
-  display: flex;
+  /* display: flex; */
   align-items: baseline;
 }
 .footer-logo {
-  display: inline-block;
+  text-align: center;
+  display: block;
+  /* display: inline-block; */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -480,9 +518,13 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-  margin-right: 120px;
+  /* margin-right: 120px; */
+}
+.footer-text-wrap {
+  margin-bottom: 72px;
 }
 .footer-text {
+  margin: 0 auto;
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
@@ -490,9 +532,11 @@ address {
   color: #f4f4fd;
 }
 .footer-network {
-  margin-right: 80px;
+  margin: 0 auto;
+  /* margin-right: 80px; */
 }
 .footer-network-text {
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -502,7 +546,10 @@ address {
 }
 .footer-network-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 .footer-network-item {
   width: 40px;
@@ -550,30 +597,40 @@ address {
   gap: 24px;
 }
 .form-text {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  /* margin-bottom: 72px; */
 }
 .footer-form {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
+}
+.input-wrap-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-input {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
   font-size: 12px;
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+  margin-bottom: 16px;
 }
+
 .footer-input::placeholder {
   padding-top: 8px;
   padding-left: 16px;
@@ -583,6 +640,7 @@ address {
   color: #ffffff;
 }
 .footer-form-button {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,4 +854,169 @@ address {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-item-title {
+    text-align: left;
+  }
+  .advantages-item-text {
+    max-width: 356px;
+  }
+  .advantages-list {
+    gap: 72px 24px;
+  }
+  .team {
+    padding: 96px 108px;
+  }
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px 24px;
+  }
+  .team-wrap {
+    margin-bottom: 0;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .wrap-footer {
+    padding-left: 108px;
+    padding-left: 108px;
+    display: flex;
+    gap: 0;
+  }
+  .footer {
+    width: 768px;
+    padding: 96px 0 96px 108px;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .footer-container-wrap {
+    margin: 0 auto;
+
+    display: flex;
+    gap: 24px;
+  }
+  .footer-container {
+    margin: 0 auto;
+  }
+  .footer-text {
+    text-align: left;
+    width: 264px;
+  }
+  .footer-network-text {
+    text-align: left;
+  }
+  .form-wrap {
+    /* display: flex;
+    gap: 0;
+    position: absolute; */
+  }
+  .input-wrap-email {
+    margin-right: 24px;
+  }
+  .footer-form {
+  }
+  .form-text {
+    text-align: left;
+  }
+  .footer-form-button {
+  }
+  .form-wrap-batton {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-form {
+    display: flex;
+  }
+
+  .footer-input {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .advantages-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .advantages-item-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .advantages-item-text {
+    max-width: 264px;
+  }
+  .team {
+    padding: 120px 156px;
+  }
+  .team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 24px;
+  }
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+    row-gap: 72px;
+  }
+  .footer {
+    width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    margin-right: 120px;
+  }
+  .container-wrap {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+  .footer-logo {
+    display: inline-block;
+    margin-right: 120px;
+  }
+  .footer-network {
+    margin-right: 80px;
+  }
+  .form-text {
+    margin-bottom: 72px;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-input {
+    width: 264px;
+  }
 }

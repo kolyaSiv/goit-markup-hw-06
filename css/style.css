@@ -3,6 +3,10 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,14 +59,14 @@ address {
   border-bottom: 1px solid #e7e9fc;
   /* padding-top: 24px;
   padding-bottom: 24px; */
-  padding-top: 16px;
-  padding-bottom: 16px;
 
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
   display: flex;
+  align-items: center;
 }
 .header-navigation {
   align-items: center;
@@ -129,6 +133,7 @@ address {
   color: #404bbf;
 }
 .header-menu-link {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
@@ -165,6 +170,8 @@ address {
   display: block;
   margin-left: auto;
   margin-top: auto;
+  border: none;
+  background-color: #fff;
 }
 .header-button-icon {
 }
@@ -478,6 +485,8 @@ address {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .team-icons {
   fill: #f4f4fd;
@@ -1025,7 +1034,6 @@ address {
   }
   .footer-container-wrap {
     margin: 0 auto;
-    margin-bottom: 72px;
 
     display: flex;
     gap: 24px;
@@ -1100,7 +1108,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
@@ -1185,9 +1193,14 @@ address {
     margin-bottom: 48px;
     font-size: 56px;
   }
+  .header {
+  }
   .header-comtact-list {
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 40px;
+  }
+  .header-comtact-link {
+    font-size: 16px;
   }
 }

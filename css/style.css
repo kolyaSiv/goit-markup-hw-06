@@ -44,7 +44,7 @@ address {
 }
 .container {
   /* width: 1158px; */
-  width: 320px;
+  max-width: 320px;
   /* padding-left: 15px;
   padding-right: 15px; */
   padding-left: 16px;
@@ -444,16 +444,22 @@ address {
   margin-bottom: 0;
 }
 .team-list {
-  /* gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
   display: flex;
-  justify-content: center; */
+  flex-wrap: wrap;
+  justify-content: center;
 }
+.team-information {
+  padding: 32px 0;
+}
+
 .team-information {
   width: 320px;
   padding: 32px 0;
 }
 .team-list-item {
-  width: calc((100% - 24px * 3) / 4);
+  /* width: calc((100% - 24px * 3) / 4); */
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -461,7 +467,7 @@ address {
 }
 .team-images {
   margin: 0 auto;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .team-name-title {
   font-weight: 500;
@@ -662,10 +668,11 @@ address {
 .footer-text-wrap {
 }
 .footer-text {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 72px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
@@ -752,7 +759,7 @@ address {
   border-radius: 4px;
   font-size: 12px;
   /* width: 264px; */
-  width: 288px;
+  width: 100%;
   height: 40px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -1008,10 +1015,12 @@ address {
   .team {
     padding: 96px 108px;
   }
-  .team-container {
+  .team-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 64px 24px;
+  }
+  .team-list-item {
   }
   .team-wrap {
     margin-bottom: 0;
@@ -1118,8 +1127,9 @@ address {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .advantages-item {
+  .advantages-list-icon {
     width: calc((100% - 3 * 24px) / 4);
+    width: none;
   }
   .advantages-list-icon {
     display: flex;
@@ -1132,7 +1142,15 @@ address {
     max-width: 264px;
   }
   .team {
-    padding: 120px 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-list-item {
   }
   .team-container {
     display: flex;

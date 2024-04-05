@@ -65,6 +65,7 @@ address {
 }
 
 .header-container {
+  padding: 16px;
   display: flex;
   align-items: center;
 }
@@ -312,7 +313,7 @@ address {
   font-weight: 700;
   /* font-size: 56px; */
   font-size: 36px;
-  width: 216px;
+  /* width: 216px; */
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -454,10 +455,10 @@ address {
   padding: 32px 0;
 }
 
-.team-information {
+/* .team-information {
   width: 320px;
   padding: 32px 0;
-}
+} */
 .team-list-item {
   /* width: calc((100% - 24px * 3) / 4); */
   background-color: #ffffff;
@@ -996,7 +997,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1053,6 +1054,9 @@ address {
     text-align: left;
     width: 264px;
   }
+  .footer-network {
+    display: inline-block;
+  }
   .footer-network-text {
     text-align: left;
   }
@@ -1070,6 +1074,7 @@ address {
     padding-left: 108px;
   }
   .footer-form-button {
+    margin-left: revert;
     align-items: center;
     justify-content: center;
   }
@@ -1079,6 +1084,7 @@ address {
   }
 
   .footer-input {
+    min-width: 264px;
     margin-bottom: 0;
     padding-left: 0;
   }
@@ -1115,11 +1121,15 @@ address {
   .header-button {
     display: none;
   }
+  .classs {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1127,12 +1137,16 @@ address {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .advantages-list {
+    flex-wrap: nowrap;
+  }
   .advantages-list-icon {
-    width: calc((100% - 3 * 24px) / 4);
-    width: none;
+    /* width: calc((100% - 3 * 24px) / 4); */
   }
   .advantages-list-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .advantages-item-title {
     font-weight: 500;
@@ -1151,6 +1165,7 @@ address {
     gap: 24px;
   }
   .team-list-item {
+    width: calc((100% - 24px * 3) / 4);
   }
   .team-container {
     display: flex;
@@ -1169,8 +1184,8 @@ address {
     row-gap: 72px;
   }
   .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
   }
   .footer-container {
     margin-right: 120px;
@@ -1198,7 +1213,7 @@ address {
     width: 264px;
   }
   .hero {
-    max-width: 1140px;
+    max-width: 100%;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(

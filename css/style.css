@@ -823,8 +823,10 @@ address {
 .modal {
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  min-width: 288px;
+  /* min-height: 584px; */
+  min-height: 623px;
   background-color: #fcfcfc;
   position: absolute;
   left: 50%;
@@ -1115,6 +1117,10 @@ address {
     gap: 12px;
     flex-direction: column;
   }
+  .header-container {
+    padding: 0;
+  }
+
   .header-comtact-link {
     font-size: 12px;
   }
@@ -1228,6 +1234,9 @@ address {
   }
   .header {
   }
+  .header-container {
+    padding: 0;
+  }
   .header-comtact-list {
     flex-wrap: nowrap;
     flex-direction: row;
@@ -1235,5 +1244,9 @@ address {
   }
   .header-comtact-link {
     font-size: 16px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
